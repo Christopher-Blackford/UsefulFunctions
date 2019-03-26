@@ -1,6 +1,7 @@
 
-######kNN
+if(!dir.exists("./images")){dir.create("./images")}
 
+######
 numb <- 8
 stand_dev = 0.15
 
@@ -14,7 +15,7 @@ x_3 <- rnorm(numb, mean = 1.25, sd = stand_dev)
 y_3 <- rnorm(numb, mean = 0.75, sd = stand_dev)
 
 
-#jpeg("C:/Users/Chris/Dropbox/DSM presentation/rplot.jpg", width = 400, height = 300)
+png("./images/kNN_SVM.png", width = 12, height = 8, units = "in", res = 300)
 
 par(bty="l")
 
@@ -28,4 +29,4 @@ points(x_3, y_3, col = "green", pch = 19)
 
 points(1, 1, pch = 8, cex = 1.2)
 
-#dev.off()
+dev.off()

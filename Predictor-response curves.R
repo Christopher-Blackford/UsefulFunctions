@@ -66,7 +66,7 @@ y4 <- y4 + rnorm(length(y4), mean = 0, sd = sqrt(y4/2))
 
 #####Plot
 
-png("glm example output.png", width = 800, height = 600)
+png("./images/glm example output.png", width = 800, height = 600)
 
 par(mfrow = c(2,2), mai = c(0.1, 0.1, 0.1, 0.1), cex = 1.25)
 

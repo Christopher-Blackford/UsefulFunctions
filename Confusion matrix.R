@@ -1,6 +1,9 @@
 ###Confusion matrix
 library(caret)
 
+if(!dir.exists("./images")){dir.create("./images")}
+
+
 obs <- sort(rep((0:12), times = 20))
 
 pred <- round(rnorm(length(obs), mean = obs, sd = 2))
