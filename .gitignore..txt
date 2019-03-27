@@ -1,0 +1,2 @@
+#Custom made gitignore file
+images
